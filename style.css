@@ -10,12 +10,17 @@ body{
 form{
     background: rgb(242, 245, 245);
     border: 1px solid black;
-    width: 380px;
+    width: 283.5px;
+    height: 380px;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: 10px;
+    padding-right: 10px;
     text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.753);
+    border-radius: 10px;
+    margin-top: 70px;
 }
 @media (max-width:800px) {
     form{
@@ -23,53 +28,89 @@ form{
         width: 100%;
         height: 100vh;
     }
-}
-form input{
-    width: 100%;
-    height: 55px;
-    margin-top: 20px;
-    padding-left: 5px;
-    border-radius: 10px;
-    background: white;
-}
-form .Button{
-    width: 100%;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 40px;
-    background: rgb(25, 98, 255);
-    color: white;
-    font-size: 15px;
-
-}
-.facebook_img{
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    margin-top: 50px;
+    form input{
+        width: 100%;
+        height: 55px;
+        margin-top: 20px;
+        padding-left: 5px;
+        border-radius: 10px;
+        background: white;
+    }
+    form .Button{
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 40px;
+        background: rgb(25, 98, 255);
+        color: white;
+        font-size: 15px;
+    
+    }
+    .facebook_img img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: -1px;
+    }
+    .facebook_img{
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    p{
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        margin-top: 35px;
+    }
 }
 .facebook_img img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-top: -1px;
+    display: none;
 }
+form input{
+    width: 95%;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 8px;
+    margin-right: 10px;
+}
+form .Button{
+    width: 90%;
+    height: 35px;
+    margin-top: 10px;
+    background: rgb(34, 86, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 p{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    margin-top: 35px;
+    margin-top: 10px;
 }
+
+
 .create_id{
     background: none;
     border: 1px solid black;
     border-radius: 20px;
     width: 90%;
-    height: 50px;
+    height: 40px;
     margin-top: 50px;
+    background: ;
+}
+@media (max-width:700px) {
+    .create_id{
+        background: none;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 50px;
+    }
 }
 
 h5{
